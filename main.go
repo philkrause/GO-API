@@ -114,7 +114,7 @@ func updateEvent(w http.ResponseWriter, r *http.Request) {
 
 func deleteEvent(w http.ResponseWriter, r *http.Request) {
 	eventID := mux.Vars(r)["id"]
-	fmt.Println("EventID", eventID)
+	fmt.Println(eventID)
 	eventIntID, err := strconv.Atoi(eventID)
 
 	if err != nil {
